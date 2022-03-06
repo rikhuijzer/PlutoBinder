@@ -12,4 +12,5 @@ jobs:
       uses: jupyterhub/repo2docker-action@master
       with:
         DOCKER_REGISTRY: ghcr.io
+        DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         MYBINDERORG_CACHE: true
